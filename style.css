@@ -1,0 +1,396 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+}
+
+body{
+    color: #F9F8F8;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+
+header {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+
+
+}
+
+
+.container_caixaM{
+
+
+    background-color: #080708;
+    display: flex;
+    height: 100px;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 10   ;
+    color: #F9F8F8;
+}
+
+
+.container_caixaM > .logo-icon{
+
+
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    color:#F9F8F8;
+    border-radius: 50px;
+
+
+}
+
+
+
+
+
+
+.container_caixam{
+    flex-grow:1;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #080708;
+    color: #F9F8F8;
+}
+
+.container_caixam > input{
+
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container_caixam > button{
+
+    height: 40px;
+    width: 100px;
+    background-color: #9BDEAC;
+    color: #080708;
+    border-radius: 10px;
+}
+
+
+.conta{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #080708;
+    align-items: center;
+}
+
+
+
+
+.conta > img{
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 20px;
+
+}
+
+.conta > .dropdown{
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ########################################################################################################### */
+
+
+nav{
+
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 75px;
+    background-color: #592E83;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+
+nav ul li{
+    display: flex;
+    margin:0 15px;
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    font-size: 17px;
+}
+
+
+nav ul li a{
+
+    display:flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    color: #F9F8F8;
+    border-left: 1px solid #F9F8F8;
+    border-right: 1px solid #F9F8F8;
+    height: 25px;
+}
+
+nav ul li a:hover{
+    color: #B185A7;
+    border-left: 1px solid #B185A7;
+    border-right: 1px solid #B185A7;
+}
+
+/* ####################################################################################### */
+.conteudo{
+    display: flex;
+    height: 800px;
+    width: 100%;
+}
+
+
+.lateral{
+
+    display: flex;
+    flex-direction: column;
+    background-color:aliceblue;
+    height: 800px;
+    flex-basis:250px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+
+/* cards */
+
+/* 
+<div class="card">
+    <div class="card-header">
+        <h1>Eu sou a lenda</h1>
+    </div>
+    <div class="card-conteudo">
+        <p>Em um mundo pós-apocalíptico, devastado por guerras e cataclismos, um homem chamado James e seu leal cachorro, Max, eram uma dupla inseparável. Eles vagavam pelas terras desoladas em busca de comida, água e abrigo, lutando para sobreviver em um cenário sombrio e desesperador. James e Max haviam se conhecido alguns anos antes do desastre que abalou o mundo. Max era apenas um filhote quando James o resgatou de um abrigo para ani... </p>
+    </div>
+    <div class="card-rodape">
+        <button type="button" class="button-info">Saiba mais</button>
+    </div>
+</div> */
+
+
+.lateral-r{
+    height: 100%;
+    display: flex;
+    background-color: #F9F8F8;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.card{
+    margin:20px 45px;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    background-color: #080708;
+    float: right;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-header{
+
+    display: flex;
+    background-color: #14110F;
+    flex-direction: column;
+    width: 300px;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white   ;
+}
+
+.card-conteudo{
+    display: flex;
+    flex-wrap: wrap ;
+    height: 65%;
+    width: 300px;
+    justify-content: center;
+}
+
+.card-text{
+    margin-top: 10px;
+    width: 80%;
+    height:200px;
+    display: flex;
+}
+
+.card-conteudo > img{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.card-rodape{
+    height: 20%;
+    display: flex;
+    width: 300px;
+    background-color: #592E83;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.card-rodape button{
+    margin-left: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border:0px solid black;
+    background-color: #9BDEAC;
+}
+
+.card-rodape button:hover{
+
+    background-color: #7fb68d;
+
+}
+
+.card-rodape button:active{
+
+    background-color: #689574;
+
+}
+
+
+
+footer{
+
+    display: flex;
+    height: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer > h2{
+    display: flex;
+    width: 99%;
+    height: 30%;
+    align-items: center;
+    margin-left: 20px;
+}
+
+footer > .R-texto{
+    display: inline-block;
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width:800px)
+{
+header{
+    flex-wrap: wrap;
+    height: 200px;
+    
+}
+
+
+
+nav{
+    flex-wrap: wrap;
+    height: 120px;
+    align-items: start;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+
+
+.lateral{
+    display: none;
+}
+
+.conteudo{
+    height: 1200px;
+
+}
+
+footer{
+    height: 200px;
+}
+}
